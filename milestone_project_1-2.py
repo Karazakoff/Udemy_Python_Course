@@ -117,9 +117,11 @@ def replay():
 # display_board(board)
 # print(win_check(board, 'X'))
 
-print('Welcome to Tic Tac Toe!')
+
 
 while True:
+    print("\n" * 100)
+    print('Welcome to Tic Tac Toe!')
     board = [[" ", " ", " "], [" ", " ", " "], [" ", " ", " "]]
     player = choose_first()
     if player == 'X':
@@ -144,13 +146,17 @@ while True:
         else:
             place_marker(board, first_player, index)
         if win_check(board, first_player):
+            print("\n" * 100)
             print(first_player, "Won!!! Congratulations ))")
             display_board(board)
             game_on = False
             break
+        print("\n" * 100)
         display_board(board)
 
+
         if full_board_check(board):
+            print("\n" * 100)
             print("It's a draw!")
             display_board(board)
             game_on = False
@@ -164,9 +170,11 @@ while True:
             place_marker(board, second_player, index)
         if win_check(board, second_player):
             print(second_player, "Won!!! Congratulations ))")
+            print("\n" * 100)
             display_board(board)
             game_on = False
             break
+        print("\n" * 100)
         display_board(board)
 
     if not replay():
