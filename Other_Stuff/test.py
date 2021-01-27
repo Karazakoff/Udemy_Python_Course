@@ -28,7 +28,7 @@ def solve(s):
 print(solve("Hello my name is  1g Yunus"))
 print(abs(complex(1-1j)))
 print(cmath.phase(complex(1-1j)))
-Enter your code here. Read input from STDIN. Print output to STDOUT
+# Enter your code here. Read input from STDIN. Print output to STDOUT
 from collections import defaultdict
 n, m = map(int, input().split())
 first = []
